@@ -44,9 +44,9 @@ function greeting(name) {
 //Write a function expression called newGreeting.
 //Give it the same functionality as the function greeting in Problem 6.
 
-const newGreeting = (name) = {
-
-};
+let newGreeting = function (name) {
+  return 'Hello, ' + name
+}
 
 //////////////////PROBLEM 8////////////////////
 
@@ -84,12 +84,12 @@ let devMountainClassPet = dog.name;
 // with NAMEPARAM being the name parameter being passed in (not literally NAMEPARAM)
 
 const nameCheck = (name) => {
-  if (name = 'Steven') {
+  if (name === 'Steven') {
     return 'What is up ' + name + '?';
-  } else if (name = 'Bryan') {
-    return 'Hey' + name + '!';
+  } else if (name === 'Bryan') {
+    return 'Hey ' + name + '!';
   } else {
-    return 'Cool name, ' + name + '.';
+    return 'Cool name, ' + name;
   }
 };
 
@@ -99,7 +99,7 @@ const nameCheck = (name) => {
 // that will be numbers.
 // The add function should return the two parameters added together
 
-const addStuff = (num1, num2) => {
+const add = (num1, num2) => {
   return num1 + num2 
 };
 
@@ -117,8 +117,8 @@ let mathSum = add(3, 4);
 // If the passed in color equals 'black', return 'so trendy'
 // Otherwise, you should return the string 'you need to evaluate your favorite color choice'
 
-const faveColorFinder = ('color'); {
-  switch ('color'){
+const faveColorFinder = (color) => {
+  switch (color){
     case 'red': return 'red is a great color'
     break;
     case 'green': return 'green is a solid favorite color'
@@ -154,7 +154,7 @@ function pond() {
 let globalScope = ["duck"];
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = ["duck", "sailorDuck"];
+let bathroomScope = ["duck", "rubberDuck"];
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
 let bathtubScope = ["duck", "sailorDuck", "rubberDuck"];
@@ -163,7 +163,7 @@ let bathtubScope = ["duck", "sailorDuck", "rubberDuck"];
 let pondScope = ["duck", "realDuck"];
 
 //////////////////PROBLEM 14////////////////////
-
+    
 //Create a variable called age with your age assigned to you
 
 let age = 22;
